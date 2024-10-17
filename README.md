@@ -39,7 +39,9 @@ pip install -r requirements.txt
 ```
 4: Database Setup:
 Update the `app.config['SQLALCHEMY_DATABASE_URI']` in your `connect_to_db.py` file with your MySQL credentials:
-```app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://<username>:<password>@localhost/<database>'```
+```
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://<username>:<password>@localhost/<database>'
+```
 
 Run database migrations to create the necessary tables:
 ```
