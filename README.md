@@ -21,7 +21,7 @@ Modular API Endpoints:
 git clone https://github.com/MatthewGUser/CT-MP_E-Commerce
 cd CT-MP_E-Commerce
 ```
-2: Create a Virtual Environment (Optional but Recommended)
+2: Create a Virtual Environment (Optional but Recommended):
 Create and activate a virtual environment to manage your dependencies:
 ```
 # Windows
