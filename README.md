@@ -64,32 +64,44 @@ The app will be available at http://127.0.0.1:5000.
 ### Customer Management
 Create Customer: POST /customers
 * Payload: { "name": "John Doe", "email": "john@example.com", "phone": "123-456-7890" }
+
 Retrieve Customer: GET /customers/<int:id>
+
 Update Customer: PUT /customers/<int:id>
 * Payload: { "name": "John Smith", "email": "johnsmith@example.com", "phone": "987-654-3210" }
+
 Delete Customer: DELETE /customers/<int:id>
 
 ### Customer Account Management
 Create Customer Account: POST /customer_accounts
 * Payload: { "username": "john_doe", "password": "securepassword", "customer_id": 1 }
+
 Retrieve Customer Account: GET /customer_accounts/<int:id>
+
 Update Customer Account: PUT /customer_accounts/<int:id>
 * Payload: { "username": "john_updated", "password": "newpassword" }
+
 Delete Customer Account: DELETE /customer_accounts/<int:id>
 
 ### Product Management
 Create Product: POST /products
 * Payload: { "name": "Product A", "price": 99.99 }
+
 Retrieve Product: GET /products/<int:id>
+
 Update Product: PUT /products/<int:id>
 * Payload: { "name": "Product B", "price": 149.99 }
+
 Delete Product: DELETE /products/<int:id>
+
 List All Products: GET /products
 
 ### Order Management
 Place an Order: POST /orders
 * Payload: { "customer_id": 1, "items": [{ "product_id": 1, "quantity": 2 }, { "product_id": 2, "quantity": 1 }] }
+
 Retrieve an Order: GET /orders/<int:id>
+
 List All Orders: GET /orders
 
 ## Example Usage
