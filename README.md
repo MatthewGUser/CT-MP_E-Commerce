@@ -22,6 +22,7 @@ git clone https://github.com/MatthewGUser/CT-MP_E-Commerce
 cd CT-MP_E-Commerce
 ```
 2: Create a Virtual Environment (Optional but Recommended):
+
 Create and activate a virtual environment to manage your dependencies:
 ```
 # Windows
@@ -33,11 +34,13 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 3: Install Required Dependencies:
+
 Install all necessary dependencies, which are listed in the `requirements.txt` file:
 ```
 pip install -r requirements.txt
 ```
 4: Database Setup:
+
 Update the `app.config['SQLALCHEMY_DATABASE_URI']` in your `connect_to_db.py` file with your MySQL credentials:
 ```
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://<username>:<password>@localhost/<database>'
